@@ -1,10 +1,10 @@
-import MyCard from "../components/ui/myCard";
-import RecentTransaction from "../components/ui/recentTransaction";
-import WeeklyChart from "../components/ui/weeklyActivityChart";
-import ExpenseStatisticChart from "../components/ui/expenseStatisticsChart";
-import Title from "../components/ui/title";
-import BalanceHistory from "../components/ui/balanceHistory";
-import QuickTransfer from "../components/ui/quickTransfer";
+import MyCard from "../components/custom/myCard";
+import RecentTransaction from "../components/custom/recentTransaction";
+import WeeklyChart from "../components/custom/weeklyActivityChart";
+import ExpenseStatisticChart from "../components/custom/expenseStatisticsChart";
+import Title from "../components/custom/title";
+import BalanceHistory from "../components/custom/balanceHistory";
+import QuickTransfer from "../components/custom/quickTransfer";
 
 function Dashboard() {
   return (

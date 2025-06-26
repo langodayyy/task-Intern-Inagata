@@ -1,10 +1,7 @@
-import EmptyState from "../components/ui/emptyState";
-
+import EmptyState from "../components/custom/emptyState";
 
 function Services() {
-  return (
-    <EmptyState></EmptyState>
-  );
+  return <EmptyState></EmptyState>;
 }
 
 export default Services;

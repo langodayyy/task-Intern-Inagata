@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import { Input } from "./input";
-import { Label } from "./label";
-import { Button } from "./button";
-import { Popover, PopoverContent, PopoverTrigger } from "./popover";
-import { Calendar } from "./calendar";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
+import { Button } from "../ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Calendar } from "../ui/calendar";
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 import {
   Dialog,
@@ -13,7 +13,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./dialog";
+} from "../ui/dialog";
 
 export default function EditProfil() {
   const [open, setOpen] = React.useState(false);
@@ -46,7 +46,6 @@ export default function EditProfil() {
   }, [profilData.dateOfBirth]);
 
   const fileInputRef = useRef(null);
-  
 
   const handleImageClick = () => {
     if (fileInputRef.current) {

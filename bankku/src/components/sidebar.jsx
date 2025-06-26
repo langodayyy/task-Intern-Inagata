@@ -1,4 +1,4 @@
-import SidebarItem from "./sidebarItem";
+import SidebarItem from "./custom/sidebarItem";
 
 function Sidebar() {
   return (

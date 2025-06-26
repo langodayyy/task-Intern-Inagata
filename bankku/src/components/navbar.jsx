@@ -1,4 +1,4 @@
-import SearchInput from "./searchInput";
+import SearchInput from "./custom/searchInput";
 import { useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";

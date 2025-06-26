@@ -1,4 +1,4 @@
-import EmptyState from "../components/ui/emptyState";
+import EmptyState from "../components/custom/emptyState";
 
 function Transactions() {
   return (

@@ -1,9 +1,7 @@
-import EmptyState from "../components/ui/emptyState";
+import EmptyState from "../components/custom/emptyState";
 
 function CreditCard() {
-  return (
-     <EmptyState></EmptyState>
-  );
+  return <EmptyState></EmptyState>;
 }
 
 export default CreditCard;

@@ -3,9 +3,9 @@
 import { useState } from "react";
 import * as React from "react";
 import { Check } from "lucide-react";
-import { cn } from "../../../src/lib/utils";
-import { Button } from "./button";
-import { Label } from "./label";
+import { cn } from "../../lib/utils";
+import { Button } from "../ui/button";
+import { Label } from "../ui/label";
 import {
   Command,
   CommandEmpty,
@@ -13,7 +13,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "./command";
+} from "../ui/command";
 import {
   Dialog,
   DialogClose,
@@ -22,9 +22,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./dialog";
-import { Popover, PopoverContent, PopoverTrigger } from "./popover";
-import { Switch } from "./switch";
+} from "../ui/dialog";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Switch } from "../ui/switch";
 import { currencies } from "currencies.json";
 import TimezoneSelect from "react-timezone-select";
 
@@ -71,7 +71,7 @@ export function Preferences() {
     const updateSize = () => {
       setIsXL(window.innerWidth >= 1280);
     };
-    updateSize(); 
+    updateSize();
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
@@ -184,7 +184,10 @@ export function Preferences() {
                     }))
                   }
                 />
-                <Label htmlFor="digita-curency" className="xl:text-base text-[13px]">
+                <Label
+                  htmlFor="digita-curency"
+                  className="xl:text-base text-[13px]"
+                >
                   I send or receive digita currency
                 </Label>
               </div>
@@ -199,7 +202,10 @@ export function Preferences() {
                     }))
                   }
                 />
-                <Label htmlFor="merchant-order" className="xl:text-base text-[13px]">
+                <Label
+                  htmlFor="merchant-order"
+                  className="xl:text-base text-[13px]"
+                >
                   I receive merchant order
                 </Label>
               </div>
@@ -215,7 +221,10 @@ export function Preferences() {
                     }))
                   }
                 />
-                <Label htmlFor="recomendation" className="xl:text-base text-[13px]">
+                <Label
+                  htmlFor="recomendation"
+                  className="xl:text-base text-[13px]"
+                >
                   There are recommendation for my account
                 </Label>
               </div>

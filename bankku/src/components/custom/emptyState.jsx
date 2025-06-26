@@ -1,4 +1,4 @@
-import { Label } from "./label";
+import { Label } from "../ui/label";
 import Title from "./title";
 
 function EmptyState() {

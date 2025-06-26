@@ -68,10 +68,10 @@ export default function CustomPieChart() {
           <Tooltip
             contentStyle={{
               backgroundColor: "#fff",
-              borderRadius: "8px",
+              // borderRadius: "8px",
               fontSize: fontSize,
               padding: "10px",
-              color: "#333",
+              // color: "#333",
               boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
             }}
             formatter={(value, name) => [`${value}`, name]}

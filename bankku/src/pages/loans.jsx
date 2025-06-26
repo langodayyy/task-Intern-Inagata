@@ -1,5 +1,5 @@
-import LoanCard from "../components/ui/loanCard";
-import Title from "../components/ui/title";
+import LoanCard from "../components/custom/loanCard";
+import Title from "../components/custom/title";
 import {
   Table,
   TableBody,
