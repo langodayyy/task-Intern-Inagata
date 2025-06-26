@@ -2,7 +2,6 @@ import SearchInput from "./searchInput";
 import { useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import SideBar from "./sidebar";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

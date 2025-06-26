@@ -46,7 +46,7 @@ export default function EditProfil() {
   }, [profilData.dateOfBirth]);
 
   const fileInputRef = useRef(null);
-  const [preview, setPreview] = useState(profilData.pict);
+  
 
   const handleImageClick = () => {
     if (fileInputRef.current) {
@@ -58,7 +58,6 @@ export default function EditProfil() {
     const file = e.target.files?.[0];
     if (file) {
       const imageUrl = URL.createObjectURL(file);
-      setPreview(imageUrl);
     }
   };
 
